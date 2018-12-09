@@ -65,7 +65,7 @@ RUN apk update && apk add --no-cache \
 # Compile source code dari snort selanjutnya
 
 	cd /root/snort_src && \
-	./configure --enable-sourcefire && \
+	./configure --enable-sourcefire --disable-open-appid && \
 	make && \
 	make install && \
 	ln -s /usr/local/bin/snort /usr/sbin/snort &&\
