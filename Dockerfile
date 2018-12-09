@@ -52,7 +52,7 @@ RUN apk update && apk add --no-cache \
 
 # Download source snort dan simpan pada directory ~/daq_src
 
-	wget https://www.snort.org/downloads/snort/snort-2.9.11.1.tar.gz -O snort.tar.gz &&\
+	wget https://www.snort.org/downloads/snort/snort-2.9.12.tar.gz -O snort.tar.gz &&\
 	tar -xvzf snort.tar.gz --strip-components=1 -C /root/snort_src &&\
 	rm snort.tar.gz &&\
 
